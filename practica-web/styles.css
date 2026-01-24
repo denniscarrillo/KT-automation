@@ -1,0 +1,95 @@
+.header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.card {
+  width: 20rem;
+  border: 5px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* ========== MODAL STYLES ========== */
+
+/* Fondo oscuro del modal (overlay) */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Fijo en la pantalla */
+  z-index: 1000; /* Por encima de todo */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+}
+
+/* Cuando el modal está activo */
+.modal.active {
+  display: flex; /* Mostramos el modal */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenido del modal */
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: modalFadeIn 0.3s ease;
+}
+
+.modal-body {
+  padding: 20px;
+  font-size: 18px;
+  text-align: center;
+  color: #000;
+  text-justify: distribute-all-lines;
+}
+
+/* Animación de entrada */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Botón de cerrar (X) */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close:hover {
+  color: #000;
+}
+
+/* Botón para abrir el modal */
+#openModalBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px 10px;
+}
