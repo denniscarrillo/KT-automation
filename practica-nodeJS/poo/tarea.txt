@@ -1,0 +1,10 @@
+// Tarea: Practica de POO en Node.js
+/**
+ *
+ * 1. Crea una clase llamada "Animal" con los siguientes atributos: nombre, especie, edad y raza.
+ * 2. Crea métodos getter y setter para cada atributo.
+ * 3. Crea un método llamado "hacerSonido" que imprima un mensaje con el sonido que hace el animal.
+ * 4. Crea un método llamado "moverse" que imprima un mensaje indicando que el animal se está moviendo.
+ * 5. Crea una instancia de la clase "Animal" y asigna valores a sus atributos.
+ * 6. Llama a los métodos "hacerSonido" y "moverse" para mostrar el comportamiento del animal.
+ */

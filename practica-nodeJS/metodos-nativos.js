@@ -2,7 +2,7 @@ const nombre = "Juan"; // Tipo de dato: String
 
 // Método: toUpperCase()
 // Convierte el string a mayúsculas
-const nombreMayusculas = nombre.toUpperCase();
+const nombreMayusculas = nombre.toLocaleLowerCase();
 console.log("Nombre en mayúsculas:", nombreMayusculas);
 console.log("Nombre original:", nombre); // El valor original no cambia
 
